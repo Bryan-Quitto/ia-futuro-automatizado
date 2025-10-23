@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7; /* Mejor legibilidad */
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
@@ -8,16 +8,17 @@ body {
 }
 
 header {
-    background: #0077b6; /* Un azul profesional */
+    background: #0077b6;
     color: #ffffff;
     padding: 30px 0;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2.8em;
+    letter-spacing: 1px;
 }
 
 header p {
@@ -27,24 +28,25 @@ header p {
 }
 
 main {
-    padding: 20px;
+    padding: 30px;
     max-width: 900px;
-    margin: 20px auto;
+    margin: 30px auto;
     background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px; /* Bordes más suaves */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
 }
 
 section {
     margin-bottom: 40px;
-    padding: 20px;
-    border-left: 5px solid #0077b6;
-    background-color: #e9ecef;
-    border-radius: 4px;
+    padding: 25px;
+    border-left: 6px solid #0077b6; /* Línea de color más gruesa */
+    background-color: #ffffff; /* Fondo blanco para mejor contraste */
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra sutil para "levantar" la sección */
 }
 
 h2 {
-    color: #0077b6;
+    color: #005f99; /* Tono de azul un poco más oscuro */
     border-bottom: 2px solid #0077b6;
     padding-bottom: 10px;
 }
@@ -52,6 +54,7 @@ h2 {
 h3 {
     color: #333;
     margin-top: 0;
+    font-size: 1.25em;
 }
 
 ul {
@@ -61,19 +64,34 @@ ul {
 
 ul li {
     margin-bottom: 15px;
-    padding: 10px;
-    border-bottom: 1px dashed #cccccc;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+ul li:hover {
+    background-color: #f0f0f5; /* Efecto hover sutil */
+}
+
+strong {
+    color: #005f99; /* Hacer que las negritas de HTML resalten */
+}
+
+em {
+    color: #333;
+    font-weight: 600;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background: #333;
+    background: #2c3e50; /* Un gris oscuro, más formal */
     color: #ffffff;
     margin-top: 40px;
 }
 
 footer a {
-    color: #4db8ff; /* Un azul más claro para el enlace */
+    color: #74c0f8;
     text-decoration: none;
 }
